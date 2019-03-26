@@ -1,25 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Route, Switch, Link } from "react-router-dom";
+import style from "./App.css";
+import TransactionPage from "./components/TransactionPage/TransactionPage";
+import AddRecordPage from "./components/AddRecordPage";
+import SettleUpPage from "./components/SettleUpPage";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className={style.App}>
+        <Switch>
+          <Route exact path="/" component={TransactionPage} />
+          <Route path="/add-record" component={AddRecordPage} />
+          <Route path="/settle-up" component={SettleUpPage} />
+        </Switch>
       </div>
     );
   }

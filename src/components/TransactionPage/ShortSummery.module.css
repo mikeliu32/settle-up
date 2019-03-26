@@ -1,0 +1,11 @@
+.shortSummery {
+  padding: 14px;
+  text-align: center;
+}
+
+.text {
+  /* #223733 */
+  color: rgba(34, 55, 51, 0.7);
+  font-size: 12px;
+  line-height: 20px;
+}
