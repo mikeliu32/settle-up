@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route, Switch, Link } from "react-router-dom";
 import style from "./App.css";
 import TransactionPage from "./components/TransactionPage/TransactionPage";
-import AddRecordPage from "./components/AddRecordPage";
+import AddRecordPage from "./components/AddRecordPage/AddRecordPage";
 import SettleUpPage from "./components/SettleUpPage";
 
 class App extends Component {
